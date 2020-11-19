@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diagnóstico médico por imágenes</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="header">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#nos">Nosotros</a>
+            <a href="turno.html">Turno</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </div>
+
+    <div class="hero_turno">
+        <div id=t1 class="contenido-hero">
+            <h1>Turnos</h1>
+        </div>
+    </div>
+
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 centrar-texto">Rellene el formulario</h2>
+
+        <form class="contacto" action="">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Tu Nombre">
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" placeholder="Tu Correo electrónico" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
+
+                <label for="telefono">DNI:</label>
+                <input type="number" id="dni" placeholder="Su DNI" required>
+
+            </fieldset>
+            
+			<fieldset>
+                <legend>¿Qué estudio desea realizarse?</legend>
+                <label for="opciones">Selecciones estudio</label>
+                <select id="opciones">
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="Ioma">Resonancia magnética</option>
+                    <option value="Ospercin">Tomografía Computada Helicoidal</option>
+                    <option value="Osde">Ecografía</option>
+					<option value="Osde">Mamografía Digital</option>
+					<option value="Osde">Radiología Digital</option>
+					<option value="Osde">Densitometría Osea</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cobertura</legend>
+                <label for="opciones">Selecciones su obra social</label>
+                <select id="opciones">
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="Ioma">IOMA</option>
+                    <option value="Ospercin">OSPERCIN</option>
+                    <option value="Osde">OSDE</option>
+                </select>
+
+                <label for="Num">Número de afiliado:</label>
+                <input type="number">
+
+                <p>En caso que no aparezca su obra social, contáctenos para conocer el monto a abonar.</p>    
+            </fieldset>
+
+            <fieldset>
+                <legend>Seleccione turno disponible</legend>
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" min="09:00" max="18:00">
+
+     
+            </fieldset>
+
+            <input type="submit" value="Finalizar" class="boton boton-verde">
+
+        </form>
+    </main>
+
+</body>
+</html>

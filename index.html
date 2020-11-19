@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diagnóstico médico por imágenes</title>
+    <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#nos">Nosotros</a>
+            <a href="turno.html">Turno</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </div>
+    <div class="hero">
+        <div class="contenido-hero">
+            <h1>Diagnóstico médico por imágenes</h1>
+            <p><i class="fas fa-map-marker-alt"></i> Mar del Plata, Argentina</p>
+            
+            <a class="boton" href="#contacto">Contactar</a>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <main id="nos" class="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-contenedor">
+                <div class="servicio">
+                    <h3>Resonancia magnética</h3>
+                    <div class="iconos">
+						<img src="img/patient1.png" alt="Resonancia magnética">
+                    </div>
+                    <ul type="I">
+						<li>Angioresonancia</li>
+						<li>Resonancia Mamaria</li>
+						<li>Colangioresonancia</li>
+					</ul>
+                </div>
+                <div class="servicio">
+                    <h3>Tomografía Computada</h3>
+                    <div class="iconos">
+						<img src="img/tomografia.png">
+                    </div>
+                    <ul type="I">
+						<li>Angiotomografía</li>
+						<li>Reconstrucción 3D</li>
+					</ul>
+                </div>
+                <div class="servicio">
+                    <h3>Densitometría Osea</h3>
+                    <div class="iconos">
+                        <img src="img/desintometria.png">
+                    </div>
+                </div>
+            </div> <!--.servicios-->
+        </main>
+		<main class="servicios-contenedor" p>
+			<div class="servicio">
+                    <h3>Ecografía</h3>
+                    <div class="iconos">
+						<img src="img/imgo.png" alt="Resonancia magnética" width="92px" height="92px">
+                    </div>
+        	</div>
+			<div class="servicio">
+                    <h3>Mamografía Digital</h3>
+                    <div class="iconos">
+						<img src="img/breast.png" alt="Resonancia magnética" width="92px" height="92px">
+                    </div>
+                    <ul type="I">
+						<li>Marcaciones</li>
+						<li>Compresión Magnificada</li>
+					</ul>
+        	</div>
+			<div class="servicio">
+                    <h3>Radiología Digital</h3>
+                    <div class="iconos">
+						<img src="img/radiologia.png" alt="Resonancia magnética">
+                    </div>
+        	</div>
+		</main>
+
+        <div id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <form action="#">
+                <legend>Contactános llenando todos los campos</legend>
+
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label>Nombre</label>
+
+                        <input type="text" name="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="campo">
+                        <label>Teléfono</label>
+
+                        <input type="tel" name="telefono" placeholder="Teléfono">
+                    </div>
+                    <div class="campo w-100">
+                        <label>Correo</label>
+
+                        <input type="mail" name="correo" placeholder="Mail">
+                    </div>
+                    <div class="campo w-100">
+                        <label>Mensaje:</label>
+
+                        <textarea></textarea>
+                    </div>
+                </div><!--.contenedor-campos-->
+                <div class="enviar">
+                    <input class="boton" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+           
+    </div>
+<script type="text/javascript">
+	$(document).ready(function() {
+  $('a[href^="#"]').click(function() {
+    var destino = $(this.hash);
+    if (destino.length == 0) {
+      destino = $('a[name="' + this.hash.substr(1) + '"]');
+    }
+    if (destino.length == 0) {
+      destino = $('html');
+    }
+    $('html, body').animate({ scrollTop: destino.offset().top }, 500);
+    return false;
+  });
+});
+</script>
+</body>
+</html>
